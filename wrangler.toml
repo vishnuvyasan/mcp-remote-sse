@@ -1,0 +1,11 @@
+name = "mcp-client-creds-sse"
+main = "app/main.py"
+compatibility_date = "2023-10-02"
+compatibility_flags = ["python_workers"]
+
+[build]
+command = "pip install -r requirements.txt"
+
+[vars]
+# Environment variables
+DEBUG = "False"
