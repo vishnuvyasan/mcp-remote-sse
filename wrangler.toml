@@ -1,10 +1,13 @@
 name = "mcp-client-creds-sse"
-main = "app/main.py"
+main = "worker.py"
 compatibility_date = "2023-10-02"
 compatibility_flags = ["python_workers"]
 
 [build]
-command = "pip install -r requirements.txt"
+command = "pip install -r requirements-dev.txt"
+
+[site]
+bucket = "./"  # Include all files in the current directory
 
 [vars]
 # Environment variables
